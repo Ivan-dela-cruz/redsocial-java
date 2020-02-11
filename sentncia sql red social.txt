@@ -1,0 +1,13 @@
+create sequence user_sec;
+create table usuarios(
+id int default nextval('user_sec') primary key,
+  nombre_us text,
+  email_us text,
+telefono_us text,
+  descripcion_us text,
+  url_us text,
+  pais_us text,
+  ciudad_us text,
+  fecha_naci_us date,
+  pass text
+);
